@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'Moderat';
+  src: url(/font/Moderat-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: 'Moderat', 'sans-serif';
+  font-size: 14px;
+}
+
+body {
+  margin: 0 120px;
+}
+
+.header div {
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.logo svg {
+  height: 50px;
+  max-width: 200px;
+}
+
+.nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0px 10px;
+  padding: 10px 12px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #262C55;
+}
+
+.nav-links ul li .hover:hover {
+  color: #45dec2;
+}
+
+.button button {
+  background: #EEEEEE;
+  position: relative;
+  width: 142.27px;
+  height: 47px;
+}
+
+.button button {
+  background: #EEEEEE;
+  position: relative;
+  width: 142.27px;
+  height: 47px;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+}
+
+.button button:hover {
+  background: #18183e;
+  color: #ffffff;
+}
+
+.button, .button button {
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-links .dropdown {
+  display: none;
+}
+
+.nav-links ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 15px 8px 25px;
+  width: 330px;
+  height: 282px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.nav-links ul li:hover .dropdown ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 94px 94px 94px;
+      grid-template-rows: 94px 94px 94px;
+}
+
+.nav-links ul li:hover .dropdown ul .dropdown-contents {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links ul li:hover .dropdown ul .dropdown-contents .span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 0;
+}
+
+.nav-links ul li:hover .dropdown ul .dropdown-contents .span span:first-child {
+  font-weight: bolder;
+}
+
+.firstsection {
+  width: 750px;
+  height: 619px;
+  padding: 70px 0px;
+}
+
+.firstsection h1, h1 span {
+  font-size: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.firstsection h1 span {
+  color: #fb9129;
+}
+
+.firstsection h1 {
+  margin: 0px 0px 30px;
+}
+
+.firstsection p {
+  width: 610px;
+  font-size: 22px;
+  line-height: 150%;
+  margin: 0px 0px 40px;
+}
+
+.button-2 {
+  background: #EEEEEE;
+  position: relative;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 130px;
+  height: 60px;
+}
+
+.secondsection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  height: 1000px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: -150px 0px 0px;
+  padding: 100px 0px 80px;
+}
+
+#firstdiv {
+  display: -ms-grid;
+  display: grid;
+}
+
+#firstdiv img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  width: 736.58px;
+  height: 752px;
+}
+
+#seconddiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+#seconddiv img {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 524.42px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
+  height: 680px;
+}
+
+#firstdiv p {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+}
+
+#seconddiv p {
+  position: absolute;
+}
+/*# sourceMappingURL=styles.css.map */
