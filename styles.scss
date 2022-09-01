@@ -1,41 +1,46 @@
 @font-face {
-    font-family: 'Moderat';
+    font-family: 'moderat';
     src: url(/font/Moderat-Regular.woff);
 }
-
+@media (min-width: 1327px) {
+html {
+    font-size: 22px;
+}
+}
 *{
     margin: 0;
     padding: 0;
     // outline: 1px solid red;
     // border-bottom: 10px solid blue;
-    color: #000000;
-    font-family: 'Moderat', 'sans-serif';
-    font-size: 14px;
+    
 }
 body {
-    
+    color: #000000;
+    font-family: 'moderat';
+    font-size: 16px;
     margin: 0px 10%;
-    content: center;
+
 }
 
-.header {
-    width: 100%
-}
-.header div{
-    // width: 100vw;
+
+
+.header{
+   width: 100%;
     height: 12vh;
     display: flex;
     padding:15px 0px 0px;
     justify-content: space-between;
-    align-items: center;
-    
-    font-size: 15px;
+   align-items: center;
+    font-size: 0.9rem;
    
     
 }
 .logo svg {
-    height: 50px;
-    max-width: 200px;
+    height: auto;
+    max-width: 220px;
+    
+    width: 100%;
+    object-fit: cover;
 
  }
 .nav-links ul{
@@ -58,34 +63,34 @@ body {
     color: #262C55;
 }
 
-.nav-links ul li .hover:hover{
+.nav-links ul li .hover:hover, footer li:hover{
     color: #45dec2;
    
 }
 
-.button {
-    float: right;
-}
+//  .header .button {
+//     float: right;
+//     padding-right: 30%;
+// }
 .button button{
     
     background: #EEEEEE;
     position: relative;
-   
-    
-    width: 142.27px;
-    height: 47px;
-}
-
-.button button {
-    background: #EEEEEE;
-    position: relative;
-    
-    
-    width: 142.27px;
-    height: 47px;
+    font-size: 0.9rem;
+    padding: 0.9em 3em;
     border: 1px solid #EEEEEE;
     border-radius: 10px;
+    // width: 150px;
+    // height: 48px;
 }
+
+// .button button {
+//     background: #EEEEEE;
+//     position: relative;
+//     padding: 1em 2em;
+//     border: 1px solid #EEEEEE;
+//     border-radius: 10px;
+// }
 .button button:hover{
     background: #18183e;
     color: #ffffff;
@@ -178,17 +183,18 @@ body {
 
 
 .firstsection {
-width: 750px;
+// width: 750px;
+width: 75%;
 // height: 619px;
-padding: 70px 0px;
+padding: 4.375rem 0rem;
 
 }
 .firstsection h1, h1 span{
-    font-size: 7vw;
+    font-size: 6.25rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }   
 
-.firstsection h1 span {
+.firstsection h1 span, .fourthsection h2 span {
    color: #fb9129;
 }
 
@@ -196,18 +202,19 @@ padding: 70px 0px;
     margin: 0px 0px 30px;
 }
 .firstsection p {
-    width: 610px;
-    font-size: 22px;
+   width: 80%;
+    font-size: 1.375rem;
     line-height: 150%;
     margin: 0px 0px 40px;
 }
 
 .button-1 {
+    font-size: 1rem;
     background: #0a0e27;
     border: 1px solid #0a0e27;
     border-radius: 10px;
     color: #ffffff;
-    font-weight: bolder;
+    // font-weight: bolder;
     padding: 21px 24px;
     margin-right: 20px;
 }
@@ -217,150 +224,20 @@ padding: 70px 0px;
     border: 1px solid #EEEEEE;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 21px 24px;
 
 }
-@media (min-width: 751px) {
-.secondsection {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    // height: 1000px;
-    position: absolute;
-    left: 0;
-    right:0;
-    margin: -70px 0px 0px;
-    padding: 100px 0px 80px;
-    float: left;
-}
 
-// .secondsection p {
-//     border: 1px solid red;
+
+// .thirdsection {
+//     // padding: 60px 0px;
 // }
-
-#firstdiv {
-    position: relative;
-    object-fit: cover;
-    left: 0;
-    width: 55vw;
-    height: 752px;
-} 
-#firstdiv img {
-    // position: static;
-    object-fit: cover;
-    max-width: 736.58px;
-    width: 100%;
-    height: 752px;
-}
-
-#seconddiv {
-    position: relative;
-    right: 0;
-    top: -200px;
-    // width: 524.42px;
-    width:40vw;
-    object-fit: cover;
-    object-position: center;
-    height: 680px;
-    float:right;
-}
-#seconddiv img {
-    // position: static;
-    max-width: 524.42px;
-    width: 100%;
-    
-    object-fit: cover;
-    object-position: 50% 30%;
-    height: 680px;
-}
-#firstdiv p {
-    position: relative;
-  float: right;
-  bottom: 7%;
-  right: 3%;
-  font-size: 24px;
-  color: #ffffff;
-
-}
-#seconddiv #first-p{
-   position: relative;
-   bottom: 7%;
-   left: 3%;
-   font-size: 24px;
-   max-width: 200px;
-   color: #ffffff;
-}
-
-#seconddiv p:last-child {
-    margin: 50px 0px 0px;
-    font-size: 20px;
-    color: #1d1d11;
-    line-height: 150%;
-    width: 390px;
-    
-}
-.thirdsection {
-    position: relative;
-    margin: 950px 0px 0px;
-}
-}
-@media (max-width: 900px) {
-    .header .nav-links {
-        display: none;
-    }
-    .header button {
-        display: none;
-    }
-    .firstsection {
-        width: 90vw;
-        // height: 619px;
-       padding: 0;
-       margin-right: 0px;
-    }
-    .firstsection h1, h1 span{
-        font-size: 10vw;
-    }
-}
-
-@media (max-width: 750px) {
-    body {
-        margin: 0 2%;
-    }
-   
-
-   
-        .secondsection {
-        // display: grid;
-        // grid-template-rows: auto auto;
-        justify-content: center;
-        align-items: center;
-        margin: -70px 0px 0px;
-        padding: 100px 0px 80px;
-    }
-
-    #firstdiv img {
-       width:100%;
-       height: auto;
-        object-fit: contain;
-
-    }
-
-    #seconddiv img {
-        width:100%;
-       height: auto;
-       object-fit:contain;
-
-    }
-}
-
-.thirdsection {
-    padding: 60px 0px;
-}
 .thirdsection p {
     margin: 0px 0px 40px;
     color: #1d1d11;
     font-size: 22px;
+    // font-weight: bolder;
 }
 .thirdsection p span {
     color: #1d1d11;
@@ -388,8 +265,1189 @@ padding: 70px 0px;
     height: 40%;
 }
 
-// .fourthsection h
+.fourthsection {
+    width: 50%;
+    padding-top: 6rem;
+    margin-bottom: 50px;
+
+}
+
+.fourthsection h2, .fourthsection h2 span{
+    font-size: 4.5rem;
+    width: 700px
+}
+
+.sixthsection, .eightsection{
+    background: #F8FAFD;
+    // padding-top: 10rem;
+    margin: 0% -12.5%;
+    padding:  10% 12.5% 10%;
+    
+}
+
+.sixthsection h2, .sixthsection h2 span {
+    font-size: 5rem;
+    max-width: 90%;
+    margin: 0 0 6rem;
+}
+
+.sixthsection h2 span {
+    color: #35A162;
+}
+
+.firstgrid1 {
+    margin-bottom: 70px;
+}
+
+.firstgrid1 h5 {
+    font-size: 1.5rem;
+    color: #050505;
+    margin: 0px 0px 19px;
+}
+
+.firstgrid1 p {
+    font-size: 1.25rem;
+    color: #1d1d11;
+    line-height: 1.5;
+    margin: 0px 0px 30px;
+}
+
+.firstgrid1 button {
+    font-size: 0.875rem;
+    padding: 0.8em 0;
+    border: 1px solid #0a0e27;
+    background: #0a0e27;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 180px;
+    // height: 47px;
+}
+// .firstgrid2 {
+   
+//     // object-fit: cover;
+//     // object-position: center;
+//     // height: 680px;
+   
+// }
+
+.firstgrid2 img{
+    // max-width: 524.42px;
+    width: 100%;
+    object-fit: cover;
+    // object-position: 50% 30%;
+    height: 680px;
+}
 
 
+.secondgrid1 {
+position: relative;
+    bottom: 10%;
+}
+.secondgrid1 img {
+    width: 100%;
+    object-fit: contain;
+   
+}
+
+.secondgrid1 p{
+     text-align: center;
+     font-size: 1.1rem;
+     margin-top: 0.875rem;
+}
+
+.secondgrid1 p span {
+    color: #35A162;
+}
+
+.secondgrid2 h5{
+    font-size: 1.5rem;
+    color: #050505;
+    margin: 0px 0px 19px;
+}
+
+.secondgrid2 p{
+    font-size: 1.25rem;
+    color: #1d1d11;
+    line-height: 1.5;
+    margin: 0px 0px 30px;
+
+}
+.secondgrid2 div p:last-child, .secondgrid2 div p:last-child span {
+    font-size: 1rem;
+    color: #fb9129;
+}
 
 
+.bigp{
+    margin-top: 15%;
+    color: #1d1d11;
+    font-size: 4.7rem;
+    line-height: 1.4;
+}
+.bigp span {
+    color: #35A162;
+}
+
+.bigbutton {
+    margin-top: 2.5em;
+    font-size: 1rem;
+    padding: 1.75rem 2rem;
+    border: 1px solid #0a0e27;
+    background: #0a0e27;
+    border-radius: 10px;
+    color: #ffffff;
+    
+}
+.seventhsection{
+    background: #1d1d11;
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    // padding-top: 10rem;
+    margin: 0% -12.5%;
+    padding:  10% 12.5% 10%;
+    position: relative;
+    
+}
+
+.seventhsection > h2 {
+    font-size: 5rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0.7em;
+}
+.seventhsection h2 span {
+    color: #6672c7;
+}
+.seventhsection > p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.375rem;
+    margin-bottom: 2.5em;
+    line-height: 1.3;
+}
+.seventhsection > button {
+    background: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    padding: 1.5em 2em;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+.stackedcards {
+    width: 50%;
+    margin:  3em auto 3em;
+    position: relative;
+}
+
+.stackedcards img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+
+    // position: absolute;
+}
+// .stackedcards img:nth-child(2), .stackedcards img:last-child
+
+.stackedimg {
+    margin-top: -20em;
+}
+ .stackedimg1 {
+    // position: relative;
+    // bottom: -10em;
+    z-index: 3;
+
+}
+.stackedimg2 {
+    z-index: 2;
+    // bottom: 18em;
+    width: 95%;
+}
+.stackedimg3 {
+    z-index: 1;
+    // bottom: 35em;
+    width:90%;
+}
+
+// .slidingcards {
+//     display:none;
+//     // position: absolute;
+//     margin: auto;
+    
+// }
+
+.card {
+    background: #353535;
+    margin: auto;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    padding: 50px 50px;
+    text-align: left;
+    box-shadow:  0px 0px 30px #292727,
+    0px 0px 30px #1d1d11;
+    // margin-left: 30%;
+   
+}
+// .card1{
+//     z-index: 1;
+//     position: relative;
+    
+    
+// }
+
+// .card2 {
+//     z-index: 2;
+//     position: relative;
+//     right: 20%;
+ 
+
+// }
+// .card3 {
+   
+//     z-index: 3;
+//     right: 40%;
+//     position:relative;
+ 
+// }
+
+// .card:hover {
+//     z-index:1;
+// }
+.card__title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.card__description {
+    line-height: 1.5;
+}
+
+.eightsection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+.eightsection > h2 {
+    font-size: 5rem;
+    max-width: 842px;
+    margin-bottom: 0.7em;
+}
+
+.eightsection > h2 > span {
+    color: #EB7DA7;
+}
+.eightsection > p {
+    width: 60%;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 2.5em;
+    // font-weight: -100;
+}
+.eightsection li > div {
+    width: 15px;
+    height: 15px;
+    background: #262C55;
+    border: 1px solid #262c55;
+    border-radius: 70%;
+    margin-right: 1em;
+}
+.eightsection li {
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 1.1rem;
+    margin-bottom: 1.1em;
+    font-weight: lighter;
+    
+}
+
+.eightsection button {
+    margin-top: 2.5em;
+    font-size: 1rem;
+    padding: 1.75rem 2rem;
+    border: 1px solid #0a0e27;
+    background: #0a0e27;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.continents {
+     fill: #587322;
+      
+}
+
+.ninthsection {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.ninthsection > h2 {
+    font-size: 5rem;
+    max-width: 842px;
+    margin-bottom: 0.7em;
+}
+.ninthsection > h2 > span {
+    color: #6672c7;
+}
+.ninthsection > div {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+.svg {
+    position: relative;
+    // right: 50%;
+    // top:-25%;
+    // width: 100%;
+   
+}
+.svg img {
+    object-fit: cover;
+    width: 100%;
+    // height: 700px;
+}
+
+.gridheading {
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+   
+}
+
+.ninthsection > div > div > div {
+    margin-bottom: 3.875rem;
+    padding-left: 2.25rem;
+    border-left: 1px dashed #1d1d11;
+}
+
+#gridlist {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.gridlist {
+    list-style: none;
+}
+.gridlist li {
+    margin-bottom: 1rem;
+}
+
+.tenthsectiondiv {
+    border: 1px solid #1d1d1d;
+    background: #1d1d1d;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 5em 10vw;
+    box-shadow:  0px 0px 66px #a3a3a3,
+                     0px 0px 66px #ffffff;
+}
+
+.tenthsectiondiv h4 {
+    font-size: 3.125rem;
+    margin-bottom: 1em;
+}
+
+.tenthsectiondiv > p {
+    font-size: 1.375rem;
+    margin-bottom: 3em;
+}
+.tenthsectiondiv > div {
+    display: flex;
+    align-items: center;
+}
+.tenthsectiondiv > div > button {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    padding: 1.313em 1.5em;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-right: 4em;
+   
+}
+
+footer {
+    padding-top: 10rem;
+}
+.firstfooterdiv {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    padding-bottom: 2.5rem;
+}
+footer li {
+    list-style: none;
+}
+
+.firstfooterdiv > div > h6 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.firstfooterdiv > div li, .firstfooterlastdiv li{
+    padding: 2px;
+    margin-bottom: 1.5em;
+}
+
+.secondfooterdiv, .thirdfooterdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 30px 0px;
+    font-size: 0.95rem;
+}
+.secondfooterdiv button {
+    border: none;
+    background: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+.secondfooterdiv button img {
+    width: 21px;
+    object-fit: contain;
+    border-radius: 50px;
+    margin-right: 8px;
+    
+}
+
+.secondfooterdiv ul , .thirdfooterdiv ul{
+    display: flex;
+  
+}
+
+.firstfooterlastdiv {
+    display: none;
+}
+.secondfooterdiv ul li, .thirdfooterdiv ul li {
+    padding: 2px;
+    margin-right: 24px;
+}
+.lastchild{
+    margin-right: 0px;
+}
+.firstfooterdiv .fa-caret-down, .thirdfooterdiv .fa-caret-down,.secondfooterdiv .fa-caret-down {
+    display: none;
+}
+ 
+@media (min-width: 1326px) {
+    .header {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 751px) {
+    .secondsection {
+        display: grid;
+        grid-template-columns: 55% 40%;
+        gap: 5%;
+        justify-content: space-between;
+        // height: 1000px;
+        position: absolute;
+        left: 0;
+        right:0;
+        margin: -70px 0px 0px;
+        padding: 100px 0px 80px;
+        float: left;
+    }
+    
+    // .secondsection p {
+    //     border: 1px solid red;
+    // }
+    
+    #firstdiv {
+        position: relative;
+        object-fit: cover;
+        left: 0;
+        // width: 55vw;
+        height: 752px;
+    } 
+    #firstdiv img {
+        // position: static;
+        object-fit: cover;
+        width: 100%;
+        height: 752px;
+    }
+    
+    #seconddiv {
+        position: relative;
+        right: 0;
+        top: -200px;
+        // width: 524.42px;
+        // width:40vw;
+        object-fit: cover;
+        object-position: center;
+        height: 680px;
+        float:right;
+    }
+    #seconddiv img {
+        // position: static;
+        // max-width: 524.42px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 30%;
+        height: 680px;
+    }
+    #firstdiv p {
+      position: relative;
+      float: right;
+      bottom: 7%;
+      right: 3%;
+      font-size: 24px;
+      color: #ffffff;
+    
+    }
+    #seconddiv #first-p{
+       position: relative;
+       bottom: 7%;
+       left: 3%;
+       font-size: 24px;
+       max-width: 200px;
+       color: #ffffff;
+    }
+    
+    #seconddiv p:last-child {
+        margin: 20px 0px 0px;
+        font-size: 1.25rem;
+        color: #1d1d11;
+        line-height: 150%;
+        max-width: 500px;
+        
+    }
+    .thirdsection {
+        position: relative;
+        margin: 950px 0px 0px;
+    }
+   
+    }
+@media (min-width: 901px) {
+        .fifthsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 10em;
+            
+        
+        }
+        .fifthsection > div {
+            width: 31%;
+            
+            
+        }
+        
+        .fifthsection .seconddiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fifthsection > div > img {
+            max-width: 80%;
+            object-fit: cover;
+            border-radius: 30px;
+        background: hsl(0, 0%, 100%);
+        box-shadow:  0px 0px 30px #a3a3a3,
+                     0px 0px 30px #ffffff;
+            
+        }
+        
+        .fifthsection div h5 {
+            font-size: 1.5rem;
+            color: #050505;
+            margin: 0px 0px 19px;
+        
+        
+        }
+        
+        .fifthsection  div  p {
+            font-size: 1.25rem;
+            color: #1d1d11;
+            line-height: 1.5;
+            margin: 0px 0px 30px;
+        }
+        
+        .fifthsection  div  button {
+            font-size: 0.875rem;
+            padding: 15px 25px;
+            border: 1px solid #0a0e27;
+            background: #0a0e27;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        
+        .fifthsection div p:last-child, .fifthsection div p:last-child > span {
+            font-size: 1rem;
+            color: #fb9129;
+        }
+        .fifthsection > div > div:last-child {
+            margin-top: 35%;
+        }
+        .sixthsection #firstgrid {
+            display: grid;
+            grid-template-columns: 42% 50%;
+            gap: 8% ;
+        }
+        .secondgrid2 {
+            margin-top: 20%;
+            padding-left: 15%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+        }
+
+        .firstgrid1{
+            padding-left: 15%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+        
+        }
+        #secondgrid {
+            display: grid;
+            grid-template-columns: 60% 35%;
+            gap: 5%;
+        }
+        .secondgrid2 div:last-child {
+            margin-top: 30%;
+        }
+    }
+    
+@media (max-width: 900px) {
+        body {
+            margin: 0 4%;
+        }
+        .header {
+            margin-bottom: 80px;
+        }
+        .secondsection {
+            margin: 70px 0px 0px;
+        }
+        
+        .header .nav-links {
+            display: none;
+        }
+        .header button {
+            display: none;
+        }
+        .fourthsection {
+            
+            width: 100%;
+        }
+    
+        .fourthsection h2, .fourthsection h2 span{
+            font-size: 3.125rem;
+            width: 650px;
+        
+        }
+        
+        .firstsection {
+            width: 90vw;
+            // height: 619px;
+           padding: 0;
+           margin-right: 0px;
+        //    font-size: 5rem;
+        }
+        .firstsection h1, .firstsection h1 span{
+            font-size: 4.5rem;
+        }
+    
+        .fifthsection {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            // padding: 0 0 10em;
+        }
+    
+        .fifthsection > div {
+            width: 100%;
+            // flex-direction: row;
+            
+        }
+        
+        .fifthsection .seconddiv {
+           margin: 5em 0;
+        }
+        .fifthsection > div > img {
+            max-width: 35%;
+            object-fit: cover;
+            border-radius: 30px;
+        background: hsl(0, 0%, 100%);
+        box-shadow:  0px 0px 30px #a3a3a3,
+                     0px 0px 30px #ffffff;
+            
+        }
+        
+        .fifthsection div h5 {
+            font-size: 1.5rem;
+            color: #050505;
+            margin: 0px 0px 19px;
+        
+        
+        }
+        
+        .fifthsection  div  p {
+            font-size: 1.25rem;
+            color: #1d1d11;
+            line-height: 1.5;
+            margin: 0px 0px 30px;
+        }
+        
+        .fifthsection  div  button {
+            font-size: 0.875rem;
+            padding: 15px 25px;
+            border: 1px solid #0a0e27;
+            background: #0a0e27;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        
+        .fifthsection div p:last-child, .fifthsection div p:last-child > span {
+            font-size: 1rem;
+            color: #fb9129;
+        }
+        .fifthsection > div > div:last-child {
+            margin-top: 100px;
+        }
+
+        .sixthsection, .seventhsection, .eightsection, .ninthsection{
+            margin: 0% -4.3%;
+            padding: 5em 4%;
+    
+        }
+        .sixthsection > h2, .sixthsection > h2 > span {
+            font-size: 3.125rem;
+            width: 100%;
+        }
+       .seventhsection > h2 {
+            font-size: 3.125rem;
+            width: 100%;
+            margin: 0 0 1em;
+            text-align: center;
+       } 
+        
+       .seventhsection > p {
+            width: 80%;
+       }
+       
+       .firstgrid2 img{
+        // max-width: 524.42px;
+        width: 100%;
+        object-fit: contain;
+        // object-position: 50% 30%;
+        height: auto;
+    }
+    
+       #secondgrid {
+            position: relative;
+       }
+
+       .secondgrid1{
+        margin-top: 25rem;
+       }
+       .secondgrid2  {
+        position: absolute;
+        bottom: 100%;
+        // line-height: 1.5;
+        // font-size: 1.25rem;
+        // color: #1d1d1d;
+   }
+
+   .bigp {
+    font-size: 3.125rem;
+   }
+
+   .eightsection h2 {
+    font-size: 3.125rem;
+    width: 100%;
+   }
+
+   .firstfooterdiv {
+    display:block;
+    padding-bottom: 0;
+    
+   }
+   .firstfooterdiv h6 {
+        padding: 1em 0;
+        margin-top: 0;
+        
+    border-bottom: 1px solid #f3f3f3;
+   }
+
+   .legalfooter > h6 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+//     margin-bottom: 0;
+   }
+   .firstfooterlastdiv > h6 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+ .firstfooterdiv > .firstfooterlastdiv h6 {
+    margin-bottom: 0;
+}
+
+   .firstfooterlastdiv > li {
+    padding: 2px;
+    margin-bottom: 1.5em;
+ 
+}
+.firstfooterdiv .fa-caret-down,  .firstfooterlastdiv .fa-caret-down {
+    display: block;
+    float: right
+}
+
+.firstfooterdiv .fa-caret-down:hover .firstfooterdiv ul{
+    display: block;
+}
+// .secondfooterdiv, .thirdfooterdiv {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     border-top: 1px solid #f3f3f3;
+//     border-bottom: 1px solid #f3f3f3;
+//     padding: 30px 0px;
+//     font-size: 0.95rem;
+// }
+   .firstfooterlastdiv  {
+    display: block;
+   }
+   .firstfooterdiv ul, .secondfooterdiv ul, .thirdfooterdiv ul, .firstfooterlastdiv ul{
+    display: none;
+   }
+   .secondfooterdiv h6, .thirdfooterdiv h6 {
+    display: block;
+   }
+    }
+@media (min-width: 901px) and (max-width: 1140px) {
+        .firstsection {
+            width: 100%;
+        }
+    }
+
+@media (max-width: 750px) {
+        .firstsection {
+            margin-bottom: 5em;
+        }
+        .secondsection {
+            display: grid;
+            position: relative;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-items: center;
+            margin: -70px 0px 0px;
+            padding: 100px 0px 80px;
+        }
+        
+    .fourthsection h2, .fourthsection h2 span{
+        font-size: 3.125rem;
+        width: 100%;
+    
+    }
+        #firstdiv {
+            margin-bottom: 10px;
+        }
+        #seconddiv {
+            margin-top: 70px;
+        }
+        #firstdiv, #seconddiv {
+            width: 100%;
+            position: relative;
+            
+        }
+        #firstdiv img {
+           width: 100%;
+           height: auto;
+            object-fit: contain;
+            
+        }
+    
+        #firstdiv p{
+            position: relative;
+        //   float: right;
+            bottom: 45px;
+          right: -80%;
+          font-size: 24px;
+          color: #ffffff;
+          width: fit-content;
+        }
+       
+        #seconddiv img {
+           width: 100%;
+           height: auto;
+           object-fit:contain;
+           margin-top: 30px;
+    
+        }
+    
+        #first-p{
+                position: relative;
+            //   float: right;
+                bottom: 45px;
+                left: 2%;
+              font-size: 24px;
+              color: #ffffff;
+                width: fit-content;
+        }
+    
+       #seconddiv p:last-child {
+            position: absolute;
+            bottom: 100%;
+            line-height: 1.5;
+            font-size: 1.25rem;
+            color: #1d1d1d;
+       }
+       
+       .ninthsection > div {
+       display: block;
+    }
+    .svg {
+        display: flex;
+        justify-content: center;
+    }
+    .svg img {
+        width: 70%;
+        
+    }
+
+    .sixthsection, .seventhsection, .eightsection, .ninthsection {
+        margin: 0% -4.3%;
+        padding-left: 4%;
+        padding-right: 4%;
+      
+    }
+    }
+
+
+    @media (max-width: 600px) {
+
+        .header {
+            margin-bottom: 3.125rem;
+        }
+       .firstsection {
+        width: 100%;
+       }
+       #firstdiv {
+        position: relative;
+       }
+       #firstdiv p {
+        position: relative;
+        bottom: 2.5em;
+       left: 70%;
+        font-size: 24px;
+       }
+       .firstsection h1, .firstsection h1 span {
+        font-size: 3rem;
+       }
+       
+       .firstsection p {
+        font-size: 1.125rem;
+        width: 100%;
+       }
+       .button-1, .button-2 {
+        font-size: 0.9rem;
+        padding: 18px 21px;
+       }
+       .secondsection {
+        padding-top: 4em;
+       }
+
+       #seconddiv p:last-child {
+        font-size: 1rem;
+       }
+       #seconddiv {
+        margin-top: 2em;
+ 
+     }
+
+       .fourthsection h2, .fourthsection h2 span, .bigp, .ninthsection h2{
+        font-size: 2.25rem;
+       }
+       .ninthsection h2 {
+        margin-bottom: 35px;
+       }
+       .fifthsection div h5, .firstgrid1 h5, .secondgrid2 h5{
+        font-size: 1.25rem;
+       }
+       .fifthsection div p, .firstgrid1 p, .secondgrid2 p, .secondgrid1 p{
+        font-size: 1.1rem;
+       }
+       .card__title {
+        font-size: 1rem;
+       }
+       .card__description {
+        font-size: 0.85rem;
+       }
+       .fifthsection > div > div:last-child {
+        margin-top: 50px;
+       }
+       .sixthsection > h2, .sixthsection > h2 > span, .eightsection h2 {
+        font-size: 2.25rem;
+       
+    }
+    .fifthsection > div > img {
+        max-width: 270px;
+    }
+
+ 
+        .bigbutton{
+            font-size: 0.875rem;
+            padding: 1.5rem 2rem;
+        }
+       .seventhsection > h2 {
+        font-size: 2.25rem;
+        width: 100%;
+        margin: 0 0 1em;
+        text-align: center;
+   } 
+    
+   .seventhsection > p {
+        font-size: 1.125rem;
+        width: 80%;
+   }
+
+   .slidingcards {
+        display: block;
+   }
+   .card {
+        padding: 25px;
+        border-radius: 20px;
+        margin-top: 5%;
+   }
+   .seventhsection > button {
+        font-size: 0.875rem;
+   }
+
+   .eightsection > p{
+    width: 100%;
+    font-size: 1.125rem;
+   }
+
+   .eightsection button {
+    font-size: 0.875rem;
+   }
+   .tenthsectiondiv {
+    padding: 3em;
+   }
+   .tenthsectiondiv h4 {
+    font-size: 1.875rem;
+   }
+   .tenthsectiondiv > p {
+    font-size: 1.06rem;
+   }
+   .tenthsectiondiv > div > button {
+    font-size: 0.875rem;
+    margin-right: 2em;
+   }
+
+   footer {
+    padding-top: 5rem;
+   }
+
+   .business {
+    height: 60px;
+    width: auto;
+}
+.business__logo {
+    height: 80%;
+    object-fit: contain;
+    color: #000000;
+}
+    }
+    
+@media (max-width: 392px) {
+   #seconddiv p:last-child {
+    position: absolute;
+    bottom: 90%;
+    font-size: 0.95rem;
+}
+
+#first-p {
+    font-size: 16px;
+}
+#firstdiv p {
+    position: relative;
+    bottom: 2.5em;
+    left: 65%;
+    font-size: 16px;
+}
+
+#seconddiv img {
+   
+    margin-top: 50px;
+}
+}
+@media (max-width: 382px) {
+    .tenthsectiondiv > div {
+        display: block;
+    }
+    .tenthsectiondiv > div > button {
+        font-size: 0.8rem;
+        margin-bottom: 2em;
+       
+       }
+       .seventhsection > button {
+        font-size: 0.8rem;
+    }
+    .button-1 {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 325px) {
+    #seconddiv img {
+   
+        margin-top: 100px;
+    }
+   
+    #seconddiv p:last-child {
+        
+        bottom: 75%;
+        font-size: 0.95rem;
+    }
+    .secondgrid1{
+        margin-top: 27rem;
+       }
+}
+@media (max-width: 337px) {
+    .sixthsection, .seventhsection, .eightsection, .ninthsection {
+        // margin: 0% -4.3%;
+      
+    }
+   
+}
+@media (max-width: 338px) {
+#firstdiv p {
+    position: relative;
+    bottom: 2.5em;
+    left: 70%;
+    font-size: 16px;
+}
+}
+
+@media (max-width: 280px) {
+    .firstsection h1, .firstsection h1 span {
+        font-size: 2.5rem;
+    }
+
+    #firstdiv p {
+        position: relative;
+        bottom: 2.5em;
+        left: 60%;
+        font-size: 16px;
+    }
+    .secondgrid2 {
+        position: absolute;
+        bottom: 60%;
+        margin-top: 20%;
+        margin-bottom: 50%;
+    }
+}
+    // position: relative;
+//     right: 0;
+//     top: -200px;
+//     // width: 524.42px;
+//     width:40vw;
+//     object-fit: cover;
+//     object-position: center;
+//     height: 680px;
+//     float:right;
