@@ -770,6 +770,10 @@ footer li {
 }
 
 @media (min-width: 901px) {
+  .header .sidemenu {
+    display: none;
+    float: right;
+  }
   .fifthsection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -883,6 +887,16 @@ footer li {
   }
   .header {
     margin-bottom: 80px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .header .sidemenu .fa-bars {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #18183e;
   }
   .secondsection {
     margin: 70px 0px 0px;

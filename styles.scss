@@ -839,7 +839,14 @@ footer li {
    
     }
 @media (min-width: 901px) {
-        .fifthsection {
+    
+    .header .sidemenu {
+        display: none;
+        float: right;
+    }
+    
+    
+    .fifthsection {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -937,11 +944,19 @@ footer li {
         }
         .header {
             margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+        .header .sidemenu  .fa-bars{
+            float: right;
+            font-size: 1.5rem;
+            font-weight: lighter;
+            color: #18183e;
         }
         .secondsection {
             margin: 70px 0px 0px;
         }
-        
         .header .nav-links {
             display: none;
         }
