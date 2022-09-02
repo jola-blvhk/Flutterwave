@@ -740,6 +740,19 @@ footer li {
     .firstfooterdiv > div li {
         font-size: 1rem;
     }
+    .card__title {
+        font-size: 1.2rem;
+    }
+    .card__description {
+        font-size: 1.1rem;
+    }
+    .gridheading {
+        font-size: 1.3rem;
+       
+    }
+    .ninthsection > div > div > div p, .gridlist li {
+        font-size: 1.1rem;
+    }
 }
 @media (min-width: 751px) {
     .secondsection {
@@ -1430,13 +1443,13 @@ footer li {
    
 // }
 // @media (max-width: 338px) {
-#firstdiv p {
-    position: relative;
-    bottom: 2.5em;
-    left: 70%;
-    font-size: 16px;
-}
-}
+// #firstdiv p {
+//     position: relative;
+//     bottom: 2.5em;
+//     left: 70%;
+//     font-size: 16px;
+// }
+// }
 
 @media (max-width: 280px) {
     .firstsection h1, .firstsection h1 span {
