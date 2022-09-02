@@ -674,6 +674,9 @@ footer li {
   .header {
     font-size: 1rem;
   }
+  .firstfooterdiv > div li {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 751px) {
