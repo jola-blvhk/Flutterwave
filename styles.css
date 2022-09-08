@@ -5,7 +5,7 @@
 
 @media (min-width: 1327px) {
   html {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -23,7 +23,7 @@ body {
 
 .header {
   width: 100%;
-  height: 12vh;
+  min-height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +35,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9rem;
+  list-style-type: none;
 }
 
 .logo svg {
@@ -45,14 +46,14 @@ body {
      object-fit: cover;
 }
 
-.nav-links ul {
+.nav_links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.nav-links li {
+.nav_links li {
   margin: 0px 10px;
   padding: 10px 12px;
   position: relative;
@@ -61,12 +62,12 @@ body {
           flex: 1;
 }
 
-.nav-links a {
+.nav_links a {
   text-decoration: none;
   color: #262C55;
 }
 
-.nav-links ul li .hover:hover, footer li:hover {
+.nav_links ul li .hover:hover, footer li:hover {
   color: #45dec2;
 }
 
@@ -91,11 +92,15 @@ body {
   color: #000000;
 }
 
-.nav-links .dropdown {
+.nav_links .dropdown {
   display: none;
 }
 
-.nav-links ul li:hover .dropdown {
+.nav_links .nodropdown div {
+  display: none;
+}
+
+.nav_links ul li:hover .dropdown {
   display: block;
   position: absolute;
   background-color: #ffffff;
@@ -106,14 +111,14 @@ body {
   border-radius: 15px;
 }
 
-.nav-links ul li:hover .dropdown ul {
+.nav_links ul li:hover .dropdown ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 94px 94px 94px;
       grid-template-rows: 94px 94px 94px;
 }
 
-.nav-links ul li:hover .dropdown ul .dropdown-contents {
+.nav_links ul li:hover .dropdown ul .dropdown-contents {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 80%;
@@ -126,7 +131,7 @@ body {
           align-items: center;
 }
 
-.nav-links ul li:hover .dropdown ul .dropdown-contents .span {
+.nav_links ul li:hover .dropdown ul .dropdown-contents .span {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto;
@@ -134,7 +139,7 @@ body {
   row-gap: 0;
 }
 
-.nav-links ul li:hover .dropdown ul .dropdown-contents .span span:first-child {
+.nav_links ul li:hover .dropdown ul .dropdown-contents .span span:first-child {
   font-weight: bolder;
 }
 
@@ -892,8 +897,8 @@ footer li {
     margin-bottom: 80px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: 95% 5%;
+        grid-template-columns: 95% 5%;
   }
   .header .sidemenu .fa-bars {
     float: right;
@@ -904,8 +909,57 @@ footer li {
   .secondsection {
     margin: 70px 0px 0px;
   }
-  .header .nav-links {
+  .header .nav_links {
     display: none;
+  }
+  .header.dropSideMenu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 100% 100% 100% 100% 100% 100%;
+        grid-template-rows: 100% 100% 100% 100% 100% 100%;
+    list-style: none;
+  }
+  .dropSideMenu .button {
+    display: block;
+  }
+  .dropSideMenu ul {
+    list-style-type: none;
+    font-size: 0.85rem;
+  }
+  .dropSideMenu > ul:first-child {
+    margin-top: 1em;
+  }
+  .dropSideMenu .dropdown {
+    border-bottom: 1px dashed #1d1d11;
+  }
+  .nodropdown > span {
+    margin-top: 3em;
+  }
+  .dropSideMenu > ul > li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding-bottom: 2rem;
+  }
+  .dropSideMenu ul li {
+    margin-bottom: 1.5em;
+  }
+  .dropSideMenu .dropdown-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  .dropSideMenu .dropdown ul .dropdown-contents .span {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    row-gap: 0;
+    padding-left: 15px;
+  }
+  .dropSideMenu .dropdown ul .dropdown-contents .span span:first-child {
+    font-weight: bolder;
   }
   .header button {
     display: none;
@@ -1065,6 +1119,9 @@ footer li {
     display: none;
   }
   .secondfooterdiv h6, .thirdfooterdiv h6 {
+    display: block;
+  }
+  .footerdiv:hover .footerdiv ul {
     display: block;
   }
 }
