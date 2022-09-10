@@ -21,6 +21,10 @@ body {
   margin: 0px 10%;
 }
 
+.navbutton {
+  display: none;
+}
+
 .header {
   width: 100%;
   min-height: 12vh;
@@ -60,6 +64,18 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.navandbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav_links a {
@@ -912,15 +928,28 @@ footer li {
   .header .nav_links {
     display: none;
   }
-  .header.dropSideMenu {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 100% 100% 100% 100% 100% 100%;
-        grid-template-rows: 100% 100% 100% 100% 100% 100%;
-    list-style: none;
-  }
-  .dropSideMenu .button {
+  .header .header-button {
     display: block;
+    background: #f20a31;
+  }
+  .navendbutton {
+    display: block;
+  }
+  .dropSideMenu .navbutton {
+    display: block;
+    width: 105%;
+    margin-top: 5em;
+  }
+  .dropSideMenu .navbutton button {
+    width: 100%;
+    background: #18183e;
+    color: #ffffff;
+    position: relative;
+    font-size: 0.9rem;
+    padding: 0.9em 2em;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    text-align: center;
   }
   .dropSideMenu ul {
     list-style-type: none;
@@ -935,11 +964,13 @@ footer li {
   .nodropdown > span {
     margin-top: 3em;
   }
-  .dropSideMenu > ul > li a {
+  .dropSideMenu > div > ul > li > a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.7rem;
     padding-bottom: 2rem;
+    color: #262C55;
+    font-weight: bold;
   }
   .dropSideMenu ul li {
     margin-bottom: 1.5em;
@@ -961,7 +992,7 @@ footer li {
   .dropSideMenu .dropdown ul .dropdown-contents .span span:first-child {
     font-weight: bolder;
   }
-  .header button {
+  .header .button {
     display: none;
   }
   .fourthsection {

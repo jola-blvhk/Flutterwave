@@ -22,7 +22,9 @@ body {
 
 }
 
-
+.navbutton {
+    display: none;
+}
 
 .header{
    width: 100%;
@@ -57,6 +59,11 @@ body {
     position: relative;
     flex: 1;
     
+}
+.navandbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav_links a {
@@ -967,15 +974,36 @@ footer li {
         .header .nav_links {
             display: none;
         }
-        .header.dropSideMenu {
+        .dropSideMenu {
        
-          display: grid;
-          grid-template-rows: 100% 100% 100% 100% 100% 100%;
-          list-style: none;
-
+    
         } 
-        .dropSideMenu .button {
+       .header .header-button {
             display: block;
+            background: rgb(242, 10, 49);
+            
+        }
+        .navendbutton {
+            display: block;
+        }
+        .dropSideMenu .navbutton {
+            display: block;
+            width: 105%;
+            margin-top: 5em;
+            
+        }
+        .dropSideMenu .navbutton button{
+            
+            width: 100%;
+            background: #18183e;
+            color: #ffffff;
+            position: relative;
+            font-size: 0.9rem;
+            padding: 0.9em 2em;
+            border: 1px solid #EEEEEE;
+            border-radius: 10px;
+            text-align: center;
+
         }
         // .logo {
         //     margin-bottom: 1em;
@@ -995,11 +1023,13 @@ footer li {
         .nodropdown > span {
            margin-top: 3em;
         }
-        .dropSideMenu > ul > li a {
+        .dropSideMenu > div > ul > li > a {
             text-transform: uppercase;
             text-decoration: none;
             font-size: 0.7rem;
             padding-bottom: 2rem;
+            color: #262C55;
+            font-weight: bold;
         }
         .dropSideMenu ul   li {
             margin-bottom: 1.5em;
@@ -1026,7 +1056,7 @@ footer li {
         .dropSideMenu .dropdown ul .dropdown-contents .span span:first-child {
             font-weight: bolder;
         } 
-        .header button {
+        .header .button {
             display: none;
         }
         .fourthsection {
